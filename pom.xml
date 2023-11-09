@@ -11,7 +11,7 @@
 	<groupId>br.com.acabouomony</groupId>
 	<artifactId>security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Security Module</name>
+	<name>Security-Module</name>
 	<description>This is the Security Module</description>
 	<properties>
 		<java.version>17</java.version>
