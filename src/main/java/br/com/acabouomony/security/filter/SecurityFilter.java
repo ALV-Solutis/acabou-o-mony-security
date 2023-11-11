@@ -34,7 +34,7 @@ public class SecurityFilter extends OncePerRequestFilter {
         if (Strings.isNotEmpty(authorizationHeader) && authorizationHeader.startsWith("Bearer ")) {
             try {
                 String token = authorizationHeader.substring("Bearer ".length());
-                Algorithm algorithm = Algorithm.HMAC256("minha-palavra-secreta");
+                Algorithm algorithm = Algorithm.HMAC256("ALV-squad2-Solutis".getBytes());
                 JWTVerifier verifier = JWT.require(algorithm).build();
                 DecodedJWT decodedJWT = verifier.verify(token);
                 String usuario = decodedJWT.getSubject();
