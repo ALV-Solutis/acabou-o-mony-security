@@ -32,7 +32,8 @@ public class SecurityConfig{
             "/users/login",
             "/users/register",
             "/login",
-            "/auth/**"
+            "/auth/**",
+            "/actuator/**"
     };
 
 
